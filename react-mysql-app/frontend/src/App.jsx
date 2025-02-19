@@ -62,7 +62,7 @@ function App() {
         editingId ? (
           <button onClick={updateUser}>Update User</button>
         ) : (
-          <button onClick={addUser}>Add User</button>
+          <button onClick={addUser}>Tambah User</button>
         )
       }
 
@@ -71,7 +71,7 @@ function App() {
           <li key={user.id}>
             {user.name} - {user.email}
             <button onClick={() => editUser(user)}>Edit</button>
-            <button onClick={() => deleteUser(user.id)}>Delete</button>
+            <button onClick={() => deleteUser(user.id)}>Hapus</button>
           </li>
         ))}
       </ul>
